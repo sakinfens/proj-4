@@ -3,9 +3,9 @@ class Meal extends React.Component{
   render() {
     return (
       <div>
-        <img src ={this.props.postData.image} alt=""/>
-        <h1>{this.props.pstData.title}</h1>
-        <p>{this.props.postData.instructions}</p>
+        <img src ={this.props.mealData.image} alt=""/>
+        <h1>{this.props.mealData.title}</h1>
+        <p>{this.props.mealData.instructions}</p>
       </div>
       <ul>
         <li onClick()={()=>{

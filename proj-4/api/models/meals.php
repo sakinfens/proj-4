@@ -57,8 +57,8 @@ class Meals {
     return self::all();
   }
   static function update($updated_meal){
-      $query = "UPDATE meals SET name = $1, image = $2, body = $3 WHERE id = $4";
-      $query_params = array($updated_meal->name, $updated_meal->image, $updated_meal->body, $updated_meal->id);
+      $query = "UPDATE meals SET title = $1, image = $2, instructions = $3 WHERE id = $4";
+      $query_params = array($updated_meal->title, $updated_meal->image, $updated_meal->instructions, $updated_meal->id);
       $result = pg_query_params($query, $query_params);
       return self::all();
     }

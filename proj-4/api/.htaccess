@@ -1,4 +1,4 @@
-Header always set Access-Control-Allow-Origin "https://cors-anywhere.herokuapp.com/https://mealsdb.herokuapp.com/api/meals"
+Header always set Access-Control-Allow-Origin "https://cors-anywhere.herokuapp.com/https://pacific-wildwood-75146.herokuapp.com/api/meals"
 Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
 Header always set Access-Control-Allow-Headers "Content-Type"
 

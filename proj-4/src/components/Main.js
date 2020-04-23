@@ -8,9 +8,9 @@ import '../App.css';
 
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
-  baseUrl = 'http://localhost:8888'
+  baseUrl = 'https://pacific-wildwood-75146.herokuapp.com/api'
 } else {
-  console.log('this is for heroku');
+  baseUrl = 'https://cors-anywhere.herokuapp.com/https://pacific-wildwood-75146.herokuapp.com/api/meals'
 }
 
 class Main extends React.Component {

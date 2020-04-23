@@ -2,7 +2,9 @@ import React from 'react'
 
 import Meal from './Meal.js'
 import Form from './Form.js'
+import Header from './Header.js'
 import '../App.css';
+
 
 let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
@@ -86,7 +88,9 @@ class Main extends React.Component {
 
   render () {
     return (
+
       <main>
+      <Header />
       <h1>{this.props.view.pageTitle}</h1>
       { this.props.view.page === 'home' ?
         this.state.meals.map((mealData) => (
@@ -104,6 +108,17 @@ class Main extends React.Component {
         view={this.props.view}
       />
     }
+    <section>
+      <h1>NAVIGATE</h1>
+      <ul>
+        <li onClick={() => {
+          this.props.handleView('home')
+        }}>home</li>
+        <li onClick={() => {
+          this.props.handleView('addMeal')
+        }}>add post</li>
+      </ul>
+    </section>
       </main>
     )
   }

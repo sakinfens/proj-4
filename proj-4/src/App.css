@@ -1,3 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 body{
-  background-color: blue;
+  font-family: 'Noto Serif', serif;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+  opacity: 70%;
+  font-size: 30px;
+}
+.instructions{
+  background-image: url('https://images.pond5.com/cute-brain-cartoon-hd-animation-footage-090469941_prevstill.jpeg');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 0px 50px;
+  font-size: 20px;
+  height: 50vh;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+}
+.instructions img{
+  width: 70vh;
+}
+
+main img{
+  width: 50vh;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+
+}
+li{
+  list-style-type: none;
+  border: 1px solid black;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+article{
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ffe291;
+  background-color: #f2f2f2;
+
+
+}
+article div{
+  margin: 50px;
+}
+.divide{
+  box-shadow: 5px 10px #888888;
+
+  font-size: 20px;
 }
